@@ -12,7 +12,7 @@ RUN yum install -y redhat-rpm-config \
     xorg-x11-server-Xvfb openbox xterm \
     net-tools python-pip \
     firefox nss_wrapper java-1.8.0-openjdk-headless \
-    java-1.8.0-openjdk-devel nss_wrapper git && \
+    java-1.8.0-openjdk-devel nss_wrapper git which xauth && \
     yum clean all
 
 RUN pip install --upgrade pip
