@@ -53,7 +53,7 @@ RUN chown root:root /zap -R && \
     chmod 777 /var/lib/jenkins -R && \
     chmod 777 /zap -R
 
-# WORKDIR /var/lib/jenkins
+WORKDIR /var/lib/jenkins
 
 EXPOSE 8080
 
