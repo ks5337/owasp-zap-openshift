@@ -55,9 +55,9 @@ RUN chown root:root /zap -R && \
 
 WORKDIR /var/lib/jenkins
 
-EXPOSE 80
 EXPOSE 8080
+EXPOSE 8090
 
 # Run the Jenkins JNLP client
 # ENTRYPOINT ["/usr/local/bin/run-jnlp-client"]
-CMD ["/zap/zap-webswing.sh", "run"]
+ENTRYPOINT ["/zap/zap-webswing.sh"]
